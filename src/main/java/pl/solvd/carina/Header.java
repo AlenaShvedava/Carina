@@ -42,33 +42,32 @@ public class Header extends AbstractUIObject {
     public boolean isZebrunnerLogoRedirectToURL(Url url) {
         return clickZebrunnerLogo().getPageURL().equalsIgnoreCase(url.getUrl());
     }
+
     public boolean isCarinaBrandPresent(int i) {
         return carinaBrand.isElementPresent(i);
     }
+
     public boolean isCarinaBrandHasText() {
         return carinaBrand.getText().equals("Carina");
     }
+
     public boolean isSearchComponentPresent(int i) {
         return searchComponent.isUIObjectPresent(i);
     }
+
     public boolean isSearchComponentElementsPresent(int i) {
-        return searchComponent.isSearchIconPresent(i)&searchComponent.isSearchInputTextPresent(i);
+        return searchComponent.isSearchIconPresent(i) & searchComponent.isSearchInputTextPresent(i);
     }
+
     public boolean isGitHubPresent(int i) {
         return githubLink.isElementPresent(i);
     }
-    public OverviewPage clickGitHubLink() {
-        githubLink.click();
-        return new OverviewPage(driver);
-    }
+
     public boolean isGitHubRedirectToURL(Url url) {
-        return clickGitHubLink().getPageURL().equalsIgnoreCase(url.getUrl());
+        return getGithubLink().getAttribute("href").equalsIgnoreCase(url.getUrl());
     }
 
     public ExtendedWebElement getGithubLink() {
         return githubLink;
     }
-
-
-
 }

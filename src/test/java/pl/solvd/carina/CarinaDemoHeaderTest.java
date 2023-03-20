@@ -79,4 +79,47 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         Assert.assertTrue(overviewPage.isHeaderVisible(), "Header not visible while page scrolling");
         Assert.assertTrue(overviewPage.isHeaderAtTheTop(), "Header is not at the top of the page");
     }
+
+    @Test()
+    @MethodOwner(owner = "ashvedava")
+    @TestPriority(Priority.P3)
+    @TestLabel(name = "feature", value = {"web", "regression"})
+    public void testNavigationVisibility() {
+        OverviewPage overviewPage = new OverviewPage(getDriver());
+        overviewPage.open();
+        Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
+        Navigation navigation = overviewPage.getNavigation();
+        Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation element wasn't found!");
+        Assert.assertTrue(navigation.isCarinaFirst(), "Carina heading is not first in navigation menu!");
+        Assert.assertTrue(navigation.isNavigationListPresent(), "Navigation list wasn't found in navigation menu!");
+        Assert.assertTrue(navigation.isCurrentPageHighlighted(), "Current page is not highlited");
+    }
+
+    @Test()
+    @MethodOwner(owner = "ashvedava")
+    @TestPriority(Priority.P3)
+    @TestLabel(name = "feature", value = {"web", "regression"})
+    public void testNavigationHiddenComponents() {
+        OverviewPage overviewPage = new OverviewPage(getDriver());
+        overviewPage.open();
+        Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
+        Navigation navigation = overviewPage.getNavigation();
+        Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation menu wasn't found!");
+        Assert.assertTrue(navigation.isHiddenElement(), "Navigation menu has hidden elements!");
+        Assert.assertTrue(navigation.isNestedElement(), "Navigation menu hasn't nested elements!");
+        Assert.assertTrue(navigation.isSubPagesReveals(), "Clicking on parent nav element don't reveals the links for sub-pages!");
+    }
+
+    @Test()
+    @MethodOwner(owner = "ashvedava")
+    @TestPriority(Priority.P3)
+    @TestLabel(name = "feature", value = {"web", "regression"})
+    public void testNavigationRedirect() {
+        OverviewPage overviewPage = new OverviewPage(getDriver());
+        overviewPage.open();
+        Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
+        Navigation navigation = overviewPage.getNavigation();
+        Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation menu wasn't found!");
+        Assert.assertTrue(navigation.isRedirectToURL(), "Clicking on link doesn't redirect to page");
+    }
 }
