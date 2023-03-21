@@ -1,11 +1,20 @@
 package pl.solvd.unsplash;
 
+import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.report.testrail.TestRailCases;
+import com.zebrunner.carina.utils.R;
+import io.restassured.RestAssured;
+import io.restassured.builder.ResponseBuilder;
+import io.restassured.path.json.JsonPath;
+import org.openqa.selenium.remote.Response;
+import org.testng.Assert;
 import pl.solvd.unsplash.api.*;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.testng.annotations.Test;
 
-public class APITest {
+import java.io.InputStream;
+
+public class APITest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "shv")
     @TestRailCases(testCasesId = "C1", locale = "https://shvedavaalena.testrail.io/index.php?/cases/view/1")

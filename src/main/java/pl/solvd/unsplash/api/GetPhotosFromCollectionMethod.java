@@ -9,12 +9,13 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 
 import static com.zebrunner.carina.utils.Configuration.getEnvArg;
 
-@Endpoint(url = "${base_url}/collections/2/photos", methodType = HttpMethodType.GET)
+@Endpoint(url = "${base_url}/collections/${id}/photos", methodType = HttpMethodType.GET)
 @ResponseTemplatePath(path = "api/photos/_getFromCollection/rs.schema")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetPhotosFromCollectionMethod extends AbstractApiMethodV2 {
     public GetPhotosFromCollectionMethod() {
         replaceUrlPlaceholder("base_url", getEnvArg("api_url"));
+        replaceUrlPlaceholder("id", String.valueOf(2));
         addParameter("query", "london");
         addParameter("client_id", getEnvArg("access_token"));
     }

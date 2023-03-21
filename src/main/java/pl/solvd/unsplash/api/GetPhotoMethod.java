@@ -19,5 +19,6 @@ public class GetPhotoMethod extends AbstractApiMethodV2 {
         replaceUrlPlaceholder("base_url", getEnvArg("api_url"));
         addParameter("query", "london");
         addParameter("client_id", getEnvArg("access_token"));
+
     }
 }

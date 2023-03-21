@@ -13,12 +13,13 @@ import javax.ws.rs.QueryParam;
 
 import static com.zebrunner.carina.utils.Configuration.getEnvArg;
 
-@Endpoint(url = "${base_url}/collections/5", methodType = HttpMethodType.GET)
+@Endpoint(url = "${base_url}/collections/${id}", methodType = HttpMethodType.GET)
 @ResponseTemplatePath(path = "api/collections/_getById/rs.schema")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetCollectionByIdMethod extends AbstractApiMethodV2 {
     public GetCollectionByIdMethod() {
         replaceUrlPlaceholder("base_url", getEnvArg("api_url"));
+        replaceUrlPlaceholder("id", String.valueOf(5));
         addParameter("query", "london");
         addParameter("client_id", getEnvArg("access_token"));
     }
