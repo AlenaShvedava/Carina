@@ -17,8 +17,8 @@ public class OverviewPage extends AbstractPage {
     private Header header;
     @FindBy(xpath = "//nav[@aria-label='Navigation']")
     private Navigation navigation;
-    @FindBy(xpath = "//footer")
-    private Footer footer;
+//    @FindBy(xpath = "//footer")
+//    private Footer footer;
     @FindBy(xpath = "//h1")
     private ExtendedWebElement title;
 
@@ -28,7 +28,7 @@ public class OverviewPage extends AbstractPage {
         setPageAbsoluteURL(R.CONFIG.get(Configuration.Parameter.URL.getKey()));
     }
 
-    public boolean isHeaderVisible() {
+    public boolean isHeaderVisibleWhileScrolling() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         return header.getRootExtendedElement().isVisible();
@@ -57,8 +57,8 @@ public class OverviewPage extends AbstractPage {
         return navigation.isUIObjectPresent();
     }
 
-    public Footer getFooter() {
-        return footer;
-    }
+//    public Footer getFooter() {
+//        return footer;
+//    }
 }
 

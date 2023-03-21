@@ -22,10 +22,6 @@ public class Header extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public ExtendedWebElement getCarinaBrand() {
-        return carinaBrand;
-    }
-
     public SearchComponent getSearchComponent() {
         return searchComponent;
     }

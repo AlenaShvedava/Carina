@@ -8,13 +8,13 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class NestedElement extends AbstractUIObject {
+public class NestedNavigationMenu extends AbstractUIObject {
     @FindBy(xpath = "//li//following-sibling::label[contains(@class,'md-nav__link')]")
     private ExtendedWebElement parentItem;
     @FindBy(xpath = "//li[contains(@class, 'nested')][contains(@class,'item')]//nav//ul[@class='md-nav__list']")
     private List<ExtendedWebElement> nestedBlock;
 
-    public NestedElement(WebDriver driver, SearchContext searchContext) {
+    public NestedNavigationMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 

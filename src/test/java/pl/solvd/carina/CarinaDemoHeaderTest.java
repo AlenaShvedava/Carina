@@ -75,8 +75,7 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
         Header header = overviewPage.getHeader();
         Assert.assertTrue(header.isUIObjectPresent(2), "Header element wasn't found!");
-        Footer footer = overviewPage.getFooter();
-        Assert.assertTrue(overviewPage.isHeaderVisible(), "Header not visible while page scrolling");
+        Assert.assertTrue(overviewPage.isHeaderVisibleWhileScrolling(), "Header not visible while page scrolling");
         Assert.assertTrue(overviewPage.isHeaderAtTheTop(), "Header is not at the top of the page");
     }
 
@@ -90,7 +89,7 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
         Navigation navigation = overviewPage.getNavigation();
         Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation element wasn't found!");
-        Assert.assertTrue(navigation.isCarinaFirst(), "Carina heading is not first in navigation menu!");
+        Assert.assertTrue(navigation.isBrandFirstElement(), "Carina heading is not first in navigation menu!");
         Assert.assertTrue(navigation.isNavigationListPresent(), "Navigation list wasn't found in navigation menu!");
         Assert.assertTrue(navigation.isCurrentPageHighlighted(), "Current page is not highlited");
     }
@@ -105,8 +104,8 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
         Navigation navigation = overviewPage.getNavigation();
         Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation menu wasn't found!");
-        Assert.assertTrue(navigation.isHiddenElement(), "Navigation menu has hidden elements!");
-        Assert.assertTrue(navigation.isNestedElement(), "Navigation menu hasn't nested elements!");
+        Assert.assertTrue(navigation.isHiddenElementInNavigationMenu(), "Navigation menu has hidden elements!");
+        Assert.assertTrue(navigation.isNestedNavigationMenu(), "Navigation menu hasn't nested elements!");
         Assert.assertTrue(navigation.isSubPagesReveals(), "Clicking on parent nav element don't reveals the links for sub-pages!");
     }
 
