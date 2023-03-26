@@ -22,10 +22,6 @@ public class Header extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public SearchComponent getSearchComponent() {
-        return searchComponent;
-    }
-
     public boolean isZebrunnerLogoPresent(int i) {
         return zebrunnerLogo.isElementPresent(i);
     }

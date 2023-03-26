@@ -6,19 +6,12 @@ import com.zebrunner.carina.utils.Configuration;
 import com.zebrunner.carina.utils.R;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.lang.invoke.MethodHandles;
 
 public class OverviewPage extends AbstractPage {
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
     @FindBy(xpath = "//header")
     private Header header;
     @FindBy(xpath = "//nav[@aria-label='Navigation']")
     private Navigation navigation;
-//    @FindBy(xpath = "//footer")
-//    private Footer footer;
     @FindBy(xpath = "//h1")
     private ExtendedWebElement title;
 
@@ -56,9 +49,4 @@ public class OverviewPage extends AbstractPage {
     public boolean isNavigationPresent() {
         return navigation.isUIObjectPresent();
     }
-
-//    public Footer getFooter() {
-//        return footer;
-//    }
 }
-

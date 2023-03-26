@@ -17,8 +17,8 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         OverviewPage overviewPage = new OverviewPage(getDriver());
         overviewPage.open();
         Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
+        Assert.assertTrue(overviewPage.isHeaderPresent(), "Header element wasn't found!");
         Header header = overviewPage.getHeader();
-        Assert.assertTrue(header.isUIObjectPresent(2), "Header element wasn't found!");
         Assert.assertTrue(header.isZebrunnerLogoPresent(2), "Zebrunner logo missing from header");
         Assert.assertTrue(header.isZebrunnerLogoRedirectToURL(Url.OVERVIEW), "Clicking on Zerunner logo doesn't redirect to Overview page");
     }
@@ -87,8 +87,8 @@ public class CarinaDemoHeaderTest implements IAbstractTest {
         OverviewPage overviewPage = new OverviewPage(getDriver());
         overviewPage.open();
         Assert.assertTrue(overviewPage.isPageOpened(), "Overview page is not opened");
+        Assert.assertTrue(overviewPage.isNavigationPresent(), "Navigation element wasn't found!");
         Navigation navigation = overviewPage.getNavigation();
-        Assert.assertTrue(navigation.isUIObjectPresent(2), "Navigation element wasn't found!");
         Assert.assertTrue(navigation.isBrandFirstElement(), "Carina heading is not first in navigation menu!");
         Assert.assertTrue(navigation.isNavigationListPresent(), "Navigation list wasn't found in navigation menu!");
         Assert.assertTrue(navigation.isCurrentPageHighlighted(), "Current page is not highlited");

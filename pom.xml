@@ -4,20 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.qaprosoft</groupId>
-    <artifactId>carina-demo</artifactId>
+    <groupId>pl.solvd</groupId>
+    <artifactId>solvd-laba</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
-    <name>Carina Demo</name>
-    <url>http://www.qaprosoft.com/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <carina-core_version>8.0.8-SNAPSHOT</carina-core_version>
         <carina-aws-s3.version>1.0.1</carina-aws-s3.version>
         <java.version>11</java.version>
-        <suite>helloWorld</suite>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.qaprosoft</groupId>
@@ -34,27 +31,8 @@
             <artifactId>log4j-api</artifactId>
             <version>2.17.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.17.1</version>
-        </dependency>
-        <dependency>
-            <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy</artifactId>
-            <version>1.12.10</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.5.3</version>
-        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -69,26 +47,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <id>copy</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M6</version>
-                <configuration>
-                    <useSystemClassLoader>false</useSystemClassLoader>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
             </plugin>
         </plugins>
     </build>

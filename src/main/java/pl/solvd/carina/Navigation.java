@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.Assert;
 
 import java.lang.invoke.MethodHandles;
 import java.util.*;
@@ -34,10 +33,6 @@ public class Navigation extends AbstractUIObject {
 
     public Navigation(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
-    }
-
-    public NestedNavigationMenu getNestedNavigationMenu() {
-        return nestedNavigationMenu;
     }
 
     public boolean isBrandFirstElement() {
@@ -99,15 +94,16 @@ public class Navigation extends AbstractUIObject {
                 System.out.printf("URL %s is empty", u);
                 LOGGER.error(String.format("URL %s is empty", u));
             } else {
-                if (u == null) {
-                    navigateLink.get(i++).click();
-                }
                 navigateLink.get(i).click();
-//                System.out.println(u);
-//                if (!u.startsWith(Url.OVERVIEW.getUrl()) && u != null) {
-//                    System.out.println("URL belongs to another domain, skipping it.");
-//                    continue;
-//                }
+                System.out.println(u);
+                if (u == null) {
+                    navigateLink.get(i+2).click();
+                    u = navigateLink.get(i+2).getAttribute("href");
+                }
+            if (!u.startsWith(Url.OVERVIEW.getUrl())) {
+                System.out.println("URL belongs to another domain.");
+                continue;
+            }
                 driver.navigate().back();
             }
         }
