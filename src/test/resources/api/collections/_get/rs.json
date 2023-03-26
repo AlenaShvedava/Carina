@@ -1,0 +1,236 @@
+{
+  "total": 10000,
+  "total_pages": 1000,
+  "results": [
+    {
+      "id": "8256290",
+      "title": " London",
+      "description": null,
+      "published_at": "2019-07-30T06:23:51Z",
+      "last_collected_at": "2023-03-10T04:30:55Z",
+      "updated_at": "2023-03-10T04:30:56Z",
+      "curated": false,
+      "featured": false,
+      "total_photos": 877,
+      "private": false,
+      "share_key": "2e84c66d50c873d3d40378b8adfb1747",
+      "tags": [
+        {
+          "type": "search",
+          "title": "london"
+        },
+        {
+          "type": "search",
+          "title": "reino unido"
+        },
+        {
+          "type": "search",
+          "title": "cidade"
+        },
+        {
+          "type": "search",
+          "title": "edifício"
+        },
+        {
+          "type": "search",
+          "title": "Londre"
+        },
+        {
+          "type": "search",
+          "title": "cinza"
+        }
+      ],
+      "links": {
+        "self": "https://api.unsplash.com/collections/8256290",
+        "html": "https://unsplash.com/collections/8256290/london",
+        "photos": "https://api.unsplash.com/collections/8256290/photos",
+        "related": "https://api.unsplash.com/collections/8256290/related"
+      },
+      "user": {
+        "id": "tKiRTJpzBTk",
+        "updated_at": "2022-11-01T08:04:26Z",
+        "username": "qwy",
+        "name": "Qi wangyang",
+        "first_name": "Qi",
+        "last_name": "wangyang",
+        "twitter_username": null,
+        "portfolio_url": null,
+        "bio": null,
+        "location": null,
+        "links": {
+          "self": "https://api.unsplash.com/users/qwy",
+          "html": "https://unsplash.com/@qwy",
+          "photos": "https://api.unsplash.com/users/qwy/photos",
+          "likes": "https://api.unsplash.com/users/qwy/likes",
+          "portfolio": "https://api.unsplash.com/users/qwy/portfolio",
+          "following": "https://api.unsplash.com/users/qwy/following",
+          "followers": "https://api.unsplash.com/users/qwy/followers"
+        },
+        "profile_image": {
+          "small": "https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-4.0.3&crop=faces&fit=crop&w=32&h=32",
+          "medium": "https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-4.0.3&crop=faces&fit=crop&w=64&h=64",
+          "large": "https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-4.0.3&crop=faces&fit=crop&w=128&h=128"
+        },
+        "instagram_username": null,
+        "total_collections": 3,
+        "total_likes": 10,
+        "total_photos": 0,
+        "accepted_tos": false,
+        "for_hire": false,
+        "social": {
+          "instagram_username": null,
+          "portfolio_url": null,
+          "twitter_username": null,
+          "paypal_email": null
+        }
+      },
+      "cover_photo": {
+        "id": "EAJ7H1G4ZPA",
+        "created_at": "2023-02-23T20:27:04Z",
+        "updated_at": "2023-03-11T01:40:09Z",
+        "promoted_at": "2023-02-24T07:24:01Z",
+        "width": 7513,
+        "height": 11270,
+        "color": "#c0d9f3",
+        "blur_hash": "L_J*@yM|tRofyst6azbHkDkDV@ay",
+        "description": null,
+        "alt_description": "a tall building with lots of windows and balconies",
+        "urls": {
+          "raw": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3",
+          "full": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+          "regular": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+          "small": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=400&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+          "thumb": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=200&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+          "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677182821372-89f3d07a23a6"
+        },
+        "links": {
+          "self": "https://api.unsplash.com/photos/EAJ7H1G4ZPA",
+          "html": "https://unsplash.com/photos/EAJ7H1G4ZPA",
+          "download": "https://unsplash.com/photos/EAJ7H1G4ZPA/download",
+          "download_location": "https://api.unsplash.com/photos/EAJ7H1G4ZPA/download"
+        },
+        "likes": 145,
+        "liked_by_user": false,
+        "current_user_collections": [],
+        "sponsorship": null,
+        "topic_submissions": {
+          "travel": {
+            "status": "rejected"
+          },
+          "architecture-interior": {
+            "status": "approved",
+            "approved_on": "2023-02-28T07:30:19Z"
+          },
+          "textures-patterns": {
+            "status": "approved",
+            "approved_on": "2023-02-28T07:25:42Z"
+          },
+          "street-photography": {
+            "status": "approved",
+            "approved_on": "2023-02-25T10:03:13Z"
+          },
+          "wallpapers": {
+            "status": "approved",
+            "approved_on": "2023-02-25T09:50:03Z"
+          }
+        },
+        "user": {
+          "id": "nFy_xUIA_uY",
+          "updated_at": "2023-03-10T12:52:34Z",
+          "username": "yvced",
+          "name": "Yves Cedric Schulze",
+          "first_name": "Yves Cedric",
+          "last_name": "Schulze",
+          "twitter_username": "yvceds",
+          "portfolio_url": "https://yvced.de",
+          "bio": "Student and Photographer based in Munich",
+          "location": "Munich, Germany",
+          "links": {
+            "self": "https://api.unsplash.com/users/yvced",
+            "html": "https://unsplash.com/@yvced",
+            "photos": "https://api.unsplash.com/users/yvced/photos",
+            "likes": "https://api.unsplash.com/users/yvced/likes",
+            "portfolio": "https://api.unsplash.com/users/yvced/portfolio",
+            "following": "https://api.unsplash.com/users/yvced/following",
+            "followers": "https://api.unsplash.com/users/yvced/followers"
+          },
+          "profile_image": {
+            "small": "https://images.unsplash.com/profile-1655887318263-586b94520e97?ixlib=rb-4.0.3&crop=faces&fit=crop&w=32&h=32",
+            "medium": "https://images.unsplash.com/profile-1655887318263-586b94520e97?ixlib=rb-4.0.3&crop=faces&fit=crop&w=64&h=64",
+            "large": "https://images.unsplash.com/profile-1655887318263-586b94520e97?ixlib=rb-4.0.3&crop=faces&fit=crop&w=128&h=128"
+          },
+          "instagram_username": "yvced",
+          "total_collections": 2,
+          "total_likes": 17,
+          "total_photos": 308,
+          "accepted_tos": true,
+          "for_hire": true,
+          "social": {
+            "instagram_username": "yvced",
+            "portfolio_url": "https://yvced.de",
+            "twitter_username": "yvceds",
+            "paypal_email": null
+          }
+        }
+      },
+      "preview_photos": [
+        {
+          "id": "EAJ7H1G4ZPA",
+          "created_at": "2023-02-23T20:27:04Z",
+          "updated_at": "2023-03-11T01:40:09Z",
+          "blur_hash": "L_J*@yM|tRofyst6azbHkDkDV@ay",
+          "urls": {
+            "raw": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3",
+            "full": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+            "regular": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=400&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "thumb": "https://images.unsplash.com/photo-1677182821372-89f3d07a23a6?ixlib=rb-4.0.3&w=200&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677182821372-89f3d07a23a6"
+          }
+        },
+        {
+          "id": "VsyTWkW8wpU",
+          "created_at": "2023-02-24T16:05:13Z",
+          "updated_at": "2023-03-11T01:40:09Z",
+          "blur_hash": "LRKLgm9x_N?GKmEOM_RjEmENM_Rk",
+          "urls": {
+            "raw": "https://images.unsplash.com/photo-1677254676149-91e5aa2eba47?ixlib=rb-4.0.3",
+            "full": "https://images.unsplash.com/photo-1677254676149-91e5aa2eba47?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+            "regular": "https://images.unsplash.com/photo-1677254676149-91e5aa2eba47?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small": "https://images.unsplash.com/photo-1677254676149-91e5aa2eba47?ixlib=rb-4.0.3&w=400&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "thumb": "https://images.unsplash.com/photo-1677254676149-91e5aa2eba47?ixlib=rb-4.0.3&w=200&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677254676149-91e5aa2eba47"
+          }
+        },
+        {
+          "id": "uNEvrUSXReA",
+          "created_at": "2023-02-24T16:47:15Z",
+          "updated_at": "2023-03-11T05:40:57Z",
+          "blur_hash": "LQEME|tl00V@_N%MIURjxu%2ofWB",
+          "urls": {
+            "raw": "https://images.unsplash.com/photo-1677257145866-af3432c35290?ixlib=rb-4.0.3",
+            "full": "https://images.unsplash.com/photo-1677257145866-af3432c35290?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+            "regular": "https://images.unsplash.com/photo-1677257145866-af3432c35290?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small": "https://images.unsplash.com/photo-1677257145866-af3432c35290?ixlib=rb-4.0.3&w=400&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "thumb": "https://images.unsplash.com/photo-1677257145866-af3432c35290?ixlib=rb-4.0.3&w=200&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677257145866-af3432c35290"
+          }
+        },
+        {
+          "id": "zwuegEmiufc",
+          "created_at": "2023-02-24T16:07:22Z",
+          "updated_at": "2023-03-10T21:42:07Z",
+          "blur_hash": "LxM7ik?uyDt7?wr;M{RPXnV?V@kC",
+          "urls": {
+            "raw": "https://images.unsplash.com/photo-1677254817053-c2dbbcd4f903?ixlib=rb-4.0.3",
+            "full": "https://images.unsplash.com/photo-1677254817053-c2dbbcd4f903?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+            "regular": "https://images.unsplash.com/photo-1677254817053-c2dbbcd4f903?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small": "https://images.unsplash.com/photo-1677254817053-c2dbbcd4f903?ixlib=rb-4.0.3&w=400&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "thumb": "https://images.unsplash.com/photo-1677254817053-c2dbbcd4f903?ixlib=rb-4.0.3&w=200&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+            "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677254817053-c2dbbcd4f903"
+          }
+        }
+      ]
+    }
+  ]
+}
