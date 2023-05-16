@@ -13,6 +13,7 @@
         <carina-core_version>8.0.8-SNAPSHOT</carina-core_version>
         <carina-aws-s3.version>1.0.1</carina-aws-s3.version>
         <java.version>11</java.version>
+
         <!--		<zebrunner-agent.version>1.9.3</zebrunner-agent.version>-->
         <suite>helloWorld</suite>
     </properties>
@@ -32,7 +33,9 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.30</version>
         </dependency>
+
         <!-- Log4j2 -->
+
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -49,7 +52,6 @@
             <version>7.6.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
